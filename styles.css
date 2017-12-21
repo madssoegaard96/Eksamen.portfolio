@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #C0DEE5;
+  color: #5D5D5D;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  font-family: "Verdana", sans-serif;
+}
+
+/* side-størrelser */
+body.small {
+  max-width: 700px;
+}
+body.large {
+  max-width: 1280px;
+}
+
+/* ting vedrørende tekst-formattering */
+a {
+  color: #5a7ec7;
+}
+
+/* grøn knap */
+a.button, button {
+  background: #24a771;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: white;
+  border-radius: 100px;
+  transition: all 0.3s;
+  border: 0;
+}
+a.button:hover, button:hover {
+  background: #187d54;
+}
+
+
+.menu, h1, h2, h3, h4, h5 a.button  {
+  font-family: 'Unica One';
+  margin: 2em 0 1em 0;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+.center {
+  text-align: center;
+}
+.no-margin {
+  margin: 0;
+}
+.margin {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+/* menuen */
+.menu {
+  display: inline;
+  background: rgba(0,0,0,0.1);
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5D5D5D;
+  padding: 1em;
+  font-size: 30px;
+  transition: 0.3s;
+  opacity: 0.5;
+  position: relative;
+}
+.menu li.active {
+  opacity: 1;
+}
+.menu li:hover {
+  opacity: 1;
+  transform: scale(1.2); /* forstørrelse af teksten */
+}
+
+
+
+
+/* dropdown */
+#projects:hover .dropdown {
+  display: block;
+}
+.dropdown {
+  padding: 10px;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  z-index: 1000;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+  background: #c0dee58a; /* gennemsigtig */
+}
+.dropdown a {
+  color: #5D5D5D;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+.dropdown a:hover {
+  font-weight: bold;
+}
+
+/* billeder */
+.frontpage-image {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: -30px;
+}
+
+
+/* billed-layout */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  align-items: center;
+}
+.row div {
+  margin-right: 30px;
+}
+.row div img {
+  width: 100%;
+}
+
+
+/* bunden */
+footer {
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+/* specielle billeder */
+#bodypic {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 80%;
+}
+@media (max-width: 1400px) {
+  #bodypic {
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+}
+
+
+/* kontakt formular */
+form {
+  background: rgba(0,0,0,0.1);
+  padding: 30px;
+}
+input, textarea {
+  width: 100%;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 30px;
+  resize: vertical;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Portfolio</title>
+
+    <!-- "slick" jquery slider -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick/slick-theme.css"/>
+  </head>
+  <body class="small">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html"><img width="40px" src="img/portfolio/madslogo.png"></a></li>
+        <li id="projects">Projekter
+          <div class="dropdown">
+            <a href="flow1.html">Flow 1</a>
+            <a href="flow2.html">Flow 2</a>
+            <a href="flow3.html">Flow 3</a>
+            <a href="flow4.html">Flow 4</a>
+            <a href="portfolio.html">Portfolio</a>
+          </div>
+        </li>
+        <a href="about.html"><li class="active">Omkring</li></a>
+        <a href="contact.html"><li>Kontakt</li></a>
+      </ul>
+    </div>
+
+    <br>
+    <h1 class="center no-margin">Bag Mads Soegaard</h1>
+    <br>
+    <br>
+    <p>Jeg hedder Mads Søgaard, jeg er 21 år gammel og læser Multi Medie Design på CPH Business i Lyngby.</p>
+    <p>På studiet beskæftiger jeg mig med alt fra design af apps til grundkodning af hjemmesider.</p>
+    <p>Min Portfolie giver et indblik i det kompetencer jeg besidder, samt de projekter jeg har arbejdet på i løbet af det sidste halve år.
+Mit arbejde er opdelt i forskellige Flows. Flow 1 er det første projekter jeg lavede i starten af mit studie og Flow 4 er det sidste projekt inden eksamensopgaven, som jeg beskæftigede mig med. </p>
+
+    <img id="bodypic" src="img/portfolio/body.about.png">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer class="center">
+      <p>Nørrebrogade 217, 2200 København N</p>
+    </footer>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+      });
+    });
+
+    </script>
+
+  </body>
+</html>

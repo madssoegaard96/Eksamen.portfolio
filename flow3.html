@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Portfolio</title>
+
+    <!-- "slick" jquery slider -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick/slick-theme.css"/>
+  </head>
+  <body class="large">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html"><img width="40px" src="img/portfolio/madslogo.png"></a></li>
+        <li id="projects" class="active">Projekter
+          <div class="dropdown">
+            <a href="flow1.html">Flow 1</a>
+            <a href="flow2.html">Flow 2</a>
+            <a href="flow3.html">Flow 3</a>
+            <a href="flow4.html">Flow 4</a>
+            <a href="portfolio.html">Portfolio</a>
+          </div>
+        </li>
+        <a href="about.html"><li>Omkring</li></a>
+        <a href="contact.html"><li>Kontakt</li></a>
+      </ul>
+    </div>
+
+
+    <h1 class="center no-margin">Flow 3</h1>
+
+    <div class="slider margin">
+      <div><img src="img/flow3/1.png"></div>
+      <div><img src="img/flow3/2.png"></div>
+      <div><img src="img/flow3/3.png"></div>
+      <div><img src="img/flow3/4.png"></div>
+      <div><img src="img/flow3/5.png"></div>
+      <div><img src="img/flow3/6.png"></div>
+      <div><img src="img/flow3/7.png"></div>
+    </div>
+
+    <h2>Byg en app</h2>
+    <b><a target="blank" href="https://cphbusiness.mrooms.net/mod/assign/view.php?id=46512">Projektbeskrivelse</a></b> ●
+    <b><a target="blank" href="https://files.acrobat.com/a/preview/bd7ac18e-f15a-4419-8a54-884c0dddead6">Rapport</a></b> ●
+    <b><a target="blank" href="https://xd.adobe.com/view/fd951968-2617-4a81-b96c-51f195b6fab7/">Oprindelig løsning</a></b> ●
+    <b><a target="blank" href="https://xd.adobe.com/view/f07c3d81-02b4-4d4d-89b1-8cc55d18d8e0">Forbedret løsning</a></b>
+
+    <p>Flow 3 var visuelt baseret, da jeg fik viden om farver, typografier og design principper. Derudover blev jeg introduceret til Adobe Illustrator og lærte de grundlæggende færdigheder i programmet til at skabe ikoner til digitale interfaces.
+      I slutningen af flowet fik jeg viden om dataindsamling og brugen af brugertest.
+      Alt min viden opnået i Flow 3 og fra de andre Flows kunne jeg bruge til det afsluttende Flow projekt ‘’Byg en app’’. Her skulle jeg gøre brug af mine færdigheder inden for Adobe XD, Adobe Illustrator, design principper, brugertests og meget mere!</p>
+    <p>
+Overordnet set var mit færdige produkt af vejrappen, gennemarbejdet og der var få mangler, som kunne forbedres. Dog manglede de 2 personas som skulle være skabt på grundlag af den valgte målgruppe. Derudover havde vejrappen den fejl, at hvis man for eksempel gik ind og kiggede på vejret i Tokyo, så viste vejrudsigten, at det ville regne. Men grafisk udtrykte vejrappen, at det ville blive blå himmel med sol, da baggrunden på appen er en blå himmel. Dette ville jeg gerne ændre således, at appen grafisk også viser vejret i den valgte by. Jeg ændrede derfor baggrunden i photoshop ved at tilføje en række forskellige adjustments, samt nogle lyn og regn, så baggrunden nu udtrykte regnvejr og torden.</p>
+
+  <div class="row">
+    <div>
+      <img src="img/flow3/baggrundregn.png">
+    </div>
+    <div>
+      <img src="img/flow3/forbedret1.png">
+    </div>
+    <div>
+      <img src="img/flow3/forbedret2.png">
+    </div>
+  </div>
+
+    <footer class="center">
+      <p>Nørrebrogade 217, 2200 København N</p>
+    </footer>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+    });
+
+    </script>
+
+  </body>
+</html>

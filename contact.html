@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Portfolio</title>
+
+    <!-- "slick" jquery slider -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick/slick-theme.css"/>
+  </head>
+  <body class="small">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html"><img width="40px" src="img/portfolio/madslogo.png"></a></li>
+        <li id="projects">Projekter
+          <div class="dropdown">
+            <a href="flow1.html">Flow 1</a>
+            <a href="flow2.html">Flow 2</a>
+            <a href="flow3.html">Flow 3</a>
+            <a href="flow4.html">Flow 4</a>
+            <a href="portfolio.html">Portfolio</a>
+          </div>
+        </li>
+        <a href="about.html"><li>Omkring</li></a>
+        <a href="contact.html"><li class="active">Kontakt</li></a>
+      </ul>
+    </div>
+
+    <br>
+    <h1 class="center no-margin">Kontakt mig</h1>
+    <br>
+    <br>
+
+    <form class="center">
+      <input placeholder="Fulde navn...">
+      <input placeholder="Email...">
+      <textarea placeholder="Besked..."></textarea>
+      <button>Send</button>
+    </form>
+
+    <img id="bodypic" src="img/portfolio/Kontakt.mads.png">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer class="center">
+      <p>Nørrebrogade 217, 2200 København N</p>
+    </footer>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+      });
+    });
+
+    </script>
+
+  </body>
+</html>
