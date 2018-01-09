@@ -98,9 +98,6 @@ h4 {
   transform: scale(1.2); /* forstørrelse af teksten */
 }
 
-
-
-
 /* dropdown */
 #projects:hover .dropdown {
   display: block;
@@ -128,7 +125,7 @@ h4 {
 
 /* billeder */
 .frontpage-image {
-  width: 100%;
+  width: 68%;
   max-width: 1000px;
   margin-top: -30px;
 }
@@ -181,7 +178,6 @@ form {
 input, textarea {
   width: 100%;
   display: block;
-  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
